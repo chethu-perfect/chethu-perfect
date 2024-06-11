@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"poppins",sans-serif ;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(pexels-pixabay-326055.jpg);
+background-size:  cover;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #161616;
+overflow: hidden;
+
+   
+
+}
+.sonu{
+    position: relative;
+    width: 450px;
+    background-color: transparent;
+    border: 2px soli rgb(13, 13, 13) ;
+    color: white;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+
+}
+.sonu h1{
+    font-size: 20px;
+    text-align: center;
+
+
+}
+.iteambox input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border: 2px solid aqua;
+    border-radius: 60px;
+    background: transparent;
+    padding: 20px 10px;
+background-size:  cover;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #161616;
+overflow: hidden;
+
+
+}
+.iteambox i{
+    position: absolute;
+    right: 20px;
+    padding: px;
+    font-size: 15px;
+
+}
+.iteambox input::placeholder{
+    color: #fff;
+
+}
+.sonu.forgot-remember{
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    margin-top: -15px;
+    margin bottom: 15px;
+}
+.forgot-remember a{
+    color:#fff;
+    text-decoration: none;
+}
+.forgot-remember a:hover{
+    text-decoration: underline;
+}
+.sonu .btn{
+    width: 50%;
+    height: 45px;
+    outline: none;
+    background: #fff;
+    border-radius: 40px;
+    cursor: pointer;
+    color: blue;
+    font-size: 15px;
+    font-weight: 600px;
+
+}
+.sonu .register-link{
+    font-size: small;
+    text-align: center;
+    margin-top: 20px;
+}
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+}
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+.btn {
+  margin: 100px;
+  
+  padding: 15px 40px;
+  border: none;
+  outline: none;
+  color: #FFF;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+}
+.btn::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  left: 0px;
+  top: 0;
+  border-radius: 10px;
+}
+/* glow */
+.btn::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00FFD5, #002BFF, #FF00C8, #FF0000
+  );
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height:  calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}
+
+/* hover */
+.btn:hover::before {
+  opacity: 1;
+}
+
+.btn:active:after {
+  background: transparent;
+}
+
+.btn:active {
+  color: #000;
+  font-weight: bold;
+}
